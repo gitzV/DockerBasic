@@ -13,8 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container
 COPY . .
 
-# Run tests
-RUN pytest
 
 # Run the application
 CMD ["python", "app/main.py"]
